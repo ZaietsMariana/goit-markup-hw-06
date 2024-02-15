@@ -797,9 +797,9 @@ width: 40px;
    .footer-one{
     flex-wrap: wrap;
     flex-direction: row;
+    padding-left: 108px;
     justify-content: start;
     align-items: baseline;
-    margin-left: 108px;
     gap: 24px;
     row-gap: 72px;
    }
@@ -825,7 +825,25 @@ width: 40px;
   
     @media screen and (min-width: 1158px) {
     
+      .logo-discription{
+      padding: 100px 0;
+      }
+
+      .footer-one{
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      gap: unset;
+      padding-left: 15pxs;
+      }
     
+      .footer-logo{
+      width: 264px;
+      margin-right: 120px; 
+      }
+
+      .footer-input{
+      margin-left: 80px;
+      }
 
     }
 
