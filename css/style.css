@@ -612,28 +612,37 @@ width: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* ================ */
 
 
 /*=====Footer=====*/
 
 .logo-discription {
   background: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 96px 0;
 }
 
 .footer-one{
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;;
+  /* align-items: baseline; */
   }
 
 
 .footer-logo{
-  width: 264px;
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 264px;
+  margin-right: 120px; */
 }
 
 .logo-web-footer{
+  display: flex;
+  display: inline-block;
+  align-items: center;
   color: #4D5AE5;
   font-family: Raleway;
   font-size: 18px;
@@ -643,8 +652,8 @@ width: 40px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   flex-shrink: 0;
-  display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  /* margin-bottom: 16px; */
 }
 
 .second-logostudio {
@@ -659,6 +668,11 @@ width: 40px;
   width: 264px;
 }
 
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .footer-icon-text{
  color: #FFF;
@@ -667,6 +681,7 @@ width: 40px;
  line-height: 1.5;
  letter-spacing: 0.02em;
  margin-bottom: 16px;
+ display: flex;
 }
 
 .footer-icon{
@@ -704,7 +719,8 @@ width: 40px;
 .footer-input{
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
+  align-items: center;
+  /* margin-left: 80px; */
 }
 
 .mail-input{
@@ -714,18 +730,21 @@ width: 40px;
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
+  display: flex;
 }
 
 .form{
   display: flex;
-  max-width: 453px;
-  gap: 24px;
-  align-items: baseline;
+  flex-direction:column;
+  align-items: center;
+  gap: 16px;
+  /* max-width: 453px; */
+  /* gap: 24px; */
 }
 
 .footer-label{
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .form-input{
@@ -751,6 +770,7 @@ width: 40px;
 
   .footer-button-input{
     display: flex;
+    margin: 0 auto;
     font-weight: 500;
     border-radius: 4px;
     padding: 8px 24px;
@@ -771,6 +791,43 @@ width: 40px;
   .subscribe-icon{
     margin-left: 16px;
   }
+
+    @media screen and (min-width: 768px) {
+     
+   .footer-one{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    margin-left: 108px;
+    gap: 24px;
+    row-gap: 72px;
+   }
+
+   .footer-logo{
+    align-items: start;
+   }
+
+   .footer-container{
+    align-items: start;
+   }
+
+   .form{
+    flex-direction: row;
+    gap: 24px;
+   }
+
+   .footer-input{
+   align-items: start;
+   }
+
+    }
+  
+    @media screen and (min-width: 1158px) {
+    
+    
+
+    }
 
   /*Modal */
 
