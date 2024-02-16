@@ -60,7 +60,8 @@ img {
     padding-right: 15px;
   }
 }
-/*======Header====== */
+
+/*---------------Header--------------------- */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -80,7 +81,6 @@ img {
   display: flex;
   align-items: center;
   }
-
 
 .logo-web {
   color: #4d5ae5;
@@ -108,7 +108,8 @@ img {
 }
 
 
-/*====== Contacts======= */
+/*------------------ Contacts------------------*/
+
 .contacts {
   display: none;
   font-style: normal;
@@ -217,10 +218,11 @@ img {
   }
 }
 
-/*====Section 1 hero===== */
+/*----------------Section 1 hero------------------ */
 
 .hero {
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 0;
   background: #2e2f42;
   background-image: 
   linear-gradient(to bottom,
@@ -231,22 +233,25 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 767px;
   margin: 0 auto;
 }
 
 .hero-title {
   color: #fff;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+  width: 169px;
+  height: 160px;
 }
 
-.button {
+
+.hero-button {
   cursor: pointer;
   color: #fff;
   background: #4d5ae5;
@@ -262,8 +267,6 @@ img {
   align-items: flex-start;
   gap: 10px; 
   margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
   border: none;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -274,12 +277,37 @@ img {
 .button:focus {
   background-color: #404bbf;
 }
-/* ================== */
 
+@media screen and (min-width: 768px) {
 
-/*===Section 2 Our strengths===*/
+.hero {
+  padding: 112px 0;
+  max-width: 1157px;
+}
+
+.hero-title{
+font-size: 56px;
+width: 496px;
+height: 120px;
+line-height: 1.07;
+margin-bottom: 36px;
+}
+}
+
+@media screen and (min-width: 1158px){
+
+.hero {
+padding: 188px 0;
+max-width: 1440px;
+}
+.hero-title{
+margin-bottom: 48px;
+}
+}
+
+/*------------Section 2 Our strengths---------*/
+
 .section-strengths{ 
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
@@ -287,8 +315,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  /* gap: 24px; */
-
 }
 
  .strengths-item{
@@ -412,13 +438,13 @@ align-items: center;
     letter-spacing: 0.02em;
   }
 }
-/* =============== */
 
 
-/*===Section 3 Our Team===*/
+/*--------------Section 3 Our Team-----------------*/
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
+  /* padding: 120px 0; */
 }
 
 .second-title {
@@ -434,15 +460,19 @@ align-items: center;
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  /* gap: 24px; */
 }
 
-.team-list .team-item {
+ .team-item {
   background-color: #FFF;
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    }
+  /* width: calc((100% - 72px) / 4); */
+}
  
 
  .picture-team {
@@ -481,7 +511,7 @@ align-items: center;
 }
 
 .picture-list-icon{
-width: 40px;
+ width: 40px;
  height: 40px;
 }
 
@@ -518,13 +548,47 @@ width: 40px;
   background-repeat: no-repeat;
 
 }
-/* =============== */
+
+@media screen and (min-width: 768px){
+
+  .team {
+    padding: 96px 108px;
+  }
+
+ .team-list{
+  justify-content: center;
+  column-gap: 24px;
+  flex-direction: row;
+  row-gap: 64px;
+ }
+
+ .team-item {
+  width: calc((100% - 24px) / 2);
+ }
+}
+
+@media screen and (min-width: 1158px){
+
+ .team {
+  padding: 120px 0;
+    }
+
+  .team-list{
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team-item {
+  width: calc((100% - 72px) / 4);
+     }
+}
 
 
-/*===Section 4 Our Portfolio===*/
+/*------------Section 4 Portfolio--------------*/
 
-.portfolio{
-  padding: 120px 0 120px 0
+ .portfolio{
+  padding: 96px 0;
+  /* padding: 120px 0; */
 }
 
 .second-portfolio-title{
@@ -540,14 +604,13 @@ width: 40px;
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
   padding-left: 0;
   padding-right: 0;
+  gap: 48px;
+  justify-content: center;
  }
 
- .portfolio-list .portfolio-item{
-  width: calc((100% - 48px) / 3);
+ .portfolio-item{
   display: block;
  }
 
@@ -613,12 +676,41 @@ width: 40px;
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+ 
+  .portfolio-list{
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 72px;
+  flex-direction: row;
+ } 
 
-/*=====Footer=====*/
+ .portfolio-item {
+  width: calc((100% - 24px) / 2);
+ }
+
+}
+
+@media screen and (min-width: 1158px) {
+
+.portfolio{
+  padding: 120px 0;
+}
+
+ .portfolio-list{
+  row-gap: 48px;
+ } 
+
+ .portfolio-item{
+  width: calc((100% - 48px) / 3);
+ }
+}
+
+
+/* -------------------Footer ---------------------*/
 
 .logo-discription {
   background: #2e2f42;
-  /* padding: 100px 0; */
   padding: 96px 0;
 }
 
@@ -626,7 +718,6 @@ width: 40px;
   display: flex;
   flex-direction: column;
   gap: 72px;;
-  /* align-items: baseline; */
   }
 
 
@@ -634,9 +725,6 @@ width: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* width: 264px;
-  margin-right: 120px; */
 }
 
 .logo-web-footer{
@@ -648,12 +736,11 @@ width: 40px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   flex-shrink: 0;
   margin-bottom: 18px;
-  /* margin-bottom: 16px; */
 }
 
 .second-logostudio {
@@ -714,13 +801,10 @@ width: 40px;
   background-color: #31D0AA;
 }
 
-/* -----footer input----- */
-
 .footer-input{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-left: 80px; */
 }
 
 .mail-input{
@@ -738,13 +822,10 @@ width: 40px;
   flex-direction:column;
   align-items: center;
   gap: 16px;
-  /* max-width: 453px; */
-  /* gap: 24px; */
 }
 
 .footer-label{
   display: flex;
-  /* gap: 24px; */
 }
 
 .form-input{
@@ -823,28 +904,29 @@ width: 40px;
 
     }
   
-    @media screen and (min-width: 1158px) {
+  @media screen and (min-width: 1158px) {
     
-      .logo-discription{
-      padding: 100px 0;
-      }
+    .logo-discription{
+    padding: 100px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    }
 
-      .footer-one{
-      flex-wrap: nowrap;
-      margin: 0 auto;
-      gap: unset;
-      padding-left: 15px;
-      }
+    .footer-one{
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    gap: unset;
+    padding-left: 15px;
+    }
     
-      .footer-logo{
-      width: 264px;
-      margin-right: 120px; 
+    .footer-logo{
+    width: 264px;
+    margin-right: 120px; 
       }
 
-      .footer-input{
-      margin-left: 80px;
+    .footer-input{
+    margin-left: 80px;
       }
-
     }
 
   /*Modal */
