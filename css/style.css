@@ -221,20 +221,29 @@ img {
 /*----------------Section 1 hero------------------ */
 
 .hero {
-  /* padding: 188px 0; */
   padding: 72px 0;
   background: #2e2f42;
   background-image: 
   linear-gradient(to bottom,
    rgba(46, 47, 66, 0.7),
-  rgba(46, 47, 66, 0.7)
-  ),
-  url(../images/peopleoffice.jpg);
+  rgba(46, 47, 66, 0.7)),
+  url(../images/peopleoffice-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 767px;
   margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution:2dppx) {
+  .hero {
+  background-image:
+  linear-gradient(to bottom,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(../images/peopleoffice-mob-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -282,7 +291,23 @@ img {
 
 .hero {
   padding: 112px 0;
-  max-width: 1157px;
+  background-image:
+  linear-gradient(to bottom,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(../images/peopleoffice-tab.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution:2dppx) {
+  .hero {
+  background-image:
+  linear-gradient(to bottom,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(../images/peopleoffice-tab-2x.jpg);
+  }
 }
 
 .hero-title{
@@ -299,7 +324,25 @@ margin-bottom: 36px;
 .hero {
 padding: 188px 0;
 max-width: 1440px;
+background-image:
+linear-gradient(to bottom,  
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+ url(../images/peopleoffice.jpg);
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution:2dppx) {
+.hero {
+background-image:
+linear-gradient(to bottom,
+rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)),
+url(../images/people-office-2x.jpg);
+  }
+}
+
 .hero-title{
 margin-bottom: 48px;
 }
