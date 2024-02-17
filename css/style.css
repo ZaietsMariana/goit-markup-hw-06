@@ -105,28 +105,6 @@ img {
 
 .nav-list{
   display: none;
-}
-
-
-/*------------------ Contacts------------------*/
-
-.contacts {
-  display: none;
-  font-style: normal;
-  margin-left: auto;
-}
-
-.open-menu-btn{
-  padding: 0;
-  line-height: 0;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-
-@media screen and (min-width: 768px) {
- .nav-list {
-  display: flex;
   gap: 40px;
 }
 
@@ -165,6 +143,25 @@ img {
   bottom: -1px;
 }
 
+.contacts {
+  display: none;
+  font-style: normal;
+  margin-left: auto;
+}
+
+.open-menu-btn{
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+ .nav-list {
+  display: flex;
+}
+
 .logo-web {
   margin-right: 120px;
 }
@@ -178,7 +175,6 @@ img {
   flex-direction: column;
   gap: 12px;
 }
-
 
 .contacts-link {
   color: #434455;
@@ -217,6 +213,112 @@ img {
   letter-spacing: 0.02em;
   }
 }
+
+
+/* ----------Mob Menu--------------- */
+
+.mob-menu {
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+background: #FFF;
+padding: 24px 24px 40px 16px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: auto;
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+}
+
+.mob-menu-button {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E7E9FC;
+  cursor: pointer;
+  margin-bottom: 88px; 
+  color: #2E2F42;
+  background-color: #fff;
+}
+
+.mob-menu-icon {
+  display: flex;
+  margin: 0 auto;
+}
+
+.mob-menu-navigation{
+  margin-bottom: 50px;
+}
+
+.mob-nav-list :not( :last-child ) {
+  margin-bottom: 40px;
+}
+
+.mob-nav-link {
+  color: #2E2F42;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.current {
+  color: #404BBF;
+}
+
+.mob-contacts {
+  margin-bottom: 48px;
+}
+
+.mob-contacts-list :not( :last-child) {
+margin-bottom: 24px;
+}
+
+.mob-contacts-link {
+  color: #4D5AE5;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.mob-mailto {
+  color: #434455;
+}
+
+.mob-icon {
+  display: flex;
+  gap: 40px;
+}
+
+.mob-list-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-icon-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  padding: 8px;
+ }
+
 
 /*----------------Section 1 hero------------------ */
 
@@ -971,7 +1073,7 @@ align-items: center;
       }
     }
 
-  /*Modal */
+  /*-----------Modal--------------- */
 
   .backdrop{
   position: fixed;
