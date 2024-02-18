@@ -1228,6 +1228,8 @@ align-items: center;
 }
 
 .check-text{
+  display: flex;
+  align-items: center;
   color: #8E8F99;
   font-size: 12px;
   line-height: 1.17;
