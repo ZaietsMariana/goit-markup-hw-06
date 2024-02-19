@@ -1034,7 +1034,7 @@ align-items: center;
    .footer-one{
     flex-wrap: wrap;
     flex-direction: row;
-    padding-left: 92px;
+    width: 584px;
     justify-content: start;
     align-items: baseline;
     gap: 24px;
@@ -1072,7 +1072,7 @@ align-items: center;
     flex-wrap: nowrap;
     margin: 0 auto;
     gap: unset;
-    padding-left: 15px;
+    min-width: 1158px;
     }
     
     .footer-logo{
